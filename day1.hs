@@ -23,4 +23,5 @@ fromFile n p = do
 main :: IO ()
 main = do
   p <- getArgs
-  print . fromFile $ p !! 1
+  r <- fromFile 2 $ p !! 0
+  print r
